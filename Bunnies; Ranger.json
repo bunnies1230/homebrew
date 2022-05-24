@@ -19,7 +19,7 @@
 		"dateLastModified": 1587834735
 	},
 	"class": [{
-			"name": "Ranger ",
+			"name": "Ranger",
 			"source": "BNUUY",
 			"page": 1,
 			"srd": false,
@@ -387,7 +387,7 @@
 				}
 			],
 			"classFeatures": [
-				"Creature Specialist|Ranger||1",
+				"Creature Specialist|Ranger||1|BNUUY",
 				"Favored Enemy|Ranger||1",
 				"Favored Foe|Ranger||1|UAClassFeatureVariants",
 				"Favored Foe|Ranger||1|TCE",
