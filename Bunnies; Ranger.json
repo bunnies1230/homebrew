@@ -96,7 +96,8 @@
 					"(a) {@item scale mail|phb} or (b) {@item leather armor|phb}",
 					"(a) two {@item shortsword|phb|shortswords} or (b) two {@filter simple melee weapons|items|source=phb|category=basic|type=simple weapon;melee weapon=sand}",
 					"(a) a {@item dungeoneer's pack|phb} or (b) an {@item explorer's pack|phb}",
-					"A {@item longbow|phb} and a {@item quiver|phb} of {@item arrows (20)|phb|20 arrows}"
+					"A {@item longbow|phb} and a {@item quiver|phb} of {@item arrows (20)|phb|20 arrows}",
+					"(a) a {@item druidic focus|phb} or (b) a {@item component pouch|phb}"
 				],
 				"goldAlternative": "{@dice 5d4 × 10|5d4 × 10|Starting Gold}",
 				"defaultData": [{
@@ -386,6 +387,7 @@
 				}
 			],
 			"classFeatures": [
+				"Creature Specialist|Ranger||1",
 				"Favored Enemy|Ranger||1",
 				"Favored Foe|Ranger||1|UAClassFeatureVariants",
 				"Favored Foe|Ranger||1|TCE",
@@ -3142,6 +3144,50 @@
 		}
 	],
 	"classFeature": [{
+			"name": "Creature Specialist",
+			"source": "BNUUY",
+			"page": 2,
+			"srd": false,
+			"className": "Ranger",
+			"classSource": "BNUUY",
+			"level": 1,
+			"entries": [
+				"Your connection with nature allows you to become expert in hunting, tracking, studying and communicating with certain types of creatures.",
+				{
+					"type": "entries",
+					"name": "Studied Types",
+					"entries": [
+              "At 1st level, choose a type of creature: {@filter aberrations|bestiary|type=aberration}, {@filter beasts|bestiary|type=beast}, {@filter celestials|bestiary|type=celestial}, {@filter constructs|bestiary|type=construct}, {@filter dragons|bestiary|type=dragon}, {@filter elementals|bestiary|type=elemental}, {@filter fey|bestiary|type=fey}, {@filter fiends|bestiary|type=fiend}, {@filter giants|bestiary|type=giant}, {@filter monstrosities|bestiary|type=monstrosity}, {@filter oozes|bestiary|type=ooze}, {@filter plants|bestiary|type=plant}, or {@filter undead|bestiary|type=undead}."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Focus Preparation",
+					"entries": [
+              "You prepare a list of creature types that are available to you, choosing from your list of Studied Types. When you do so, choose a number of creature types equal to your Wisdom modifier. Each entry of this list is referred to as a Focus or Focused Type.",
+              "For example, if you have a Wisdom of 16, your list of Focused Types can include three creature types. Utilizing any Focus benefit doesn't remove it from your list of prepared types.",
+              "You can change your list of Focused Types when you finish a long rest. Alternatively, you can replace one type with another type you know when you finish a short rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Benefits",
+					"entries": [
+              "When encountering any creature type you have prepared as a Focus, you gain the following benefits:",
+          {
+					"type": "list",
+					"items": [
+						"Advantage on Wisdom (Survival) checks to track them.",
+						"Advantage on Intelligence (Arcana, History, Nature, or Religion) checks to recall information about them.",
+						"You cannot be surprised by them."
+					 ]
+				  },
+              "At 6th, 9th, 15th and 19th Level this feature receives improvements that help a Ranger track, study, fight and converse with a Focused creature type."
+					]
+				}
+			]
+		},
+		{
 			"name": "Canny",
 			"source": "UAClassFeatureVariants",
 			"page": 7,
