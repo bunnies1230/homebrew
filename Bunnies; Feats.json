@@ -20,6 +20,32 @@
 		"dateLastModified": 1610885621
 	},
 	"feat": [
+			{
+			"name": "Actor",
+			"source": "BNUUY",
+			"page": 3,
+			"ability": [
+				{
+					"cha": 1
+				}
+			],
+			"entries": [
+				"Skilled at mimicry and dramatics, you gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"You have advantage on Charisma ({@skill Deception}) and Charisma ({@skill Performance}) checks when trying to pass yourself off as a different person, or mimic the sounds of another creature.",
+						"If you take the {@action Help} action to aid an ally attacking a creature, you can do so from up to 30 feet away if the creature can hear or see you."
+						"You gain proficiency with {@skill Performance}, {@item disguise kit|phb} and {@item weaver’s tools|phb}."
+					]
+				}
+			],
+			"skillProficiencies": [
+				{
+					"acrobatics": true
+				}
+			]
+		},
 		{
 			"name": "Acrobat",
 			"source": "FeatsForSkills",
