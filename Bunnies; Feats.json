@@ -51,6 +51,22 @@
 					"weaver's tools": true
 				}
 			]
-			}
+			},
+			{
+			"name": "Alert",
+			"source": "BNUUY",
+			"page": 3,
+			"entries": [
+				"Always on the lookout for danger, you gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"You gain a bonus to initiative equal to double your proficiency modifier.",
+						"You can't be {@condition surprised} while you are conscious.",
+						"Other creatures don't gain advantage on attack rolls against you as a result of being unseen by you."
+					]
+				}
+			],
+			},
 	]
 }
